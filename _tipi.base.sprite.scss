@@ -3,6 +3,4 @@
 
 @import "mixins/__import-sprite";
 
-@import #{$sprite-path};
-
 @include core_sprite;
