@@ -1,0 +1,21 @@
+@mixin core_sprite {
+	@import "#{$path}/*.png";
+
+
+	@include import-sprite(
+		$path : 'layout/sprite',
+		$selector: '.sprite'
+	);
+
+	// @if variable-exists(sprite-sprites) == true {
+	// 	.sprite {
+	// 		display: inline-block;
+	// 		position: relative;
+	// 		overflow: hidden;
+	// 		vertical-align: middle;
+	// 		text-align: left;
+	// 		@include construct_sprite($sprite-sprites);
+	// 		white-space: normal;
+	// 	}
+	// }
+}
